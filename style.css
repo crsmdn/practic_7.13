@@ -113,6 +113,11 @@ p,
     outline: none;
     font-size: 1.5rem;
 }
+.skills {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+}
 
 .row_2 {
     margin-top: 162px;
@@ -165,8 +170,10 @@ h2 {
 .section_eleven {
     background:  #34547A;
 }
+
+
 .img_vk {
-width: 43.75px;
+width: 175px;
 height: 40px;
 }
 .ft_name {
@@ -174,22 +181,27 @@ height: 40px;
     font-style: normal;
     font-weight: 500;
     font-size: 21px;
-    line-height: 25px;   
+    line-height: 25px;
+    
     color: #FFFFFF;
+    padding: 0px;
+    
 }
 .ft_copy {
     font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 13px;
-line-height: 21px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 21px;
+    
+    color: #FFFFFF;
+    
+padding: 0px;
+
 
 color: #FFFFFF;
 }
-.vk {
-    display: flex;
-    flex-direction: row;
-}
+
 .gallery {
     display: flex;
     flex-direction: row;
@@ -204,16 +216,26 @@ color: #FFFFFF;
     width: 46.6px;
     height: 50px;
 }
+.micro {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 72px;
+}
 .img_micro {
     width: 255px;
     height: 120px;
     padding: 0;
-    margin: 9px;
 
 }
+
 .footer {
+    display: inline-flex;
+    flex-direction: row;
     height: 151px;
     margin-top: 50px;
+    padding: 0%;
+    
 }
 .p_project {
     color: #ffffff;
@@ -226,11 +248,58 @@ color: #FFFFFF;
 .work {
     margin-top: 100px;
 }
-
+.img_works {
+    width: 480px;
+    height: 480px;
+}
+.works {
+    display: inline-block;
+    text-align: left;
+    width: 1960px;
+    height: 960px;
+    padding: 0;
+}
 .video {
-    margin-bottom: 100px;
+    margin-bottom: 128px;
 }
 
 #inputMessage {
     height: 175px;
 }
+@media screen and (max-width: 760px) {
+    .section {
+        max-width: 375px;
+        max-height: 667px; 
+        text-align: center; 
+      }
+    
+      .works {
+        max-width: 375px;
+        max-height: 200px;  
+      }
+      .img_works {
+        max-width: 93.75px;
+        max-height: 93.75px;    
+      }
+      .skills {
+        max-width: 375px;
+        max-height: 150px;  
+      }
+      .face {
+       display: none; 
+      }
+      .img {
+        display: none;
+      }
+      .skill_line {
+        max-width: 375px; 
+        border-left: 292px solid #34547A;;
+      }
+      .write_me {
+          text-align: center;
+      }
+     .section_eleven {
+        margin-top: 250px;
+    }
+   
+    }
