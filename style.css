@@ -254,7 +254,7 @@ color: #FFFFFF;
 }
 .works {
     display: inline-block;
-    text-align: left;
+    text-align: center;
     width: 1960px;
     height: 960px;
     padding: 0;
@@ -266,21 +266,36 @@ color: #FFFFFF;
 #inputMessage {
     height: 175px;
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 575px) {
     .section {
         max-width: 375px;
-        max-height: 667px; 
-        text-align: center; 
+        max-height: 667px;  
       }
-    
+      .container {
+        max-width: 375px;
+        max-height: 667px;  
+      }
+      .row {
+        max-width: 375px;
+        max-height: 667px;   
+      }
       .works {
+        display: flex;
         max-width: 375px;
         max-height: 200px;  
+        justify-content: center;
+      
       }
       .img_works {
         max-width: 93.75px;
         max-height: 93.75px;    
       }
+      .gallery {
+          display: inline-flex;
+          justify-content: center;
+      }
+      
+      
       .skills {
         max-width: 375px;
         max-height: 150px;  
@@ -289,17 +304,85 @@ color: #FFFFFF;
        display: none; 
       }
       .img {
-        display: none;
+          display: none;
       }
       .skill_line {
         max-width: 375px; 
         border-left: 292px solid #34547A;;
       }
       .write_me {
-          text-align: center;
+        display: flex;
+        justify-content: center;
+      }
+     
+      .section_first {
+        display: flex;
+        justify-content: center;
+        text-align: center;
       }
      .section_eleven {
         margin-top: 250px;
     }
    
     }
+      @media screen and (max-width: 760px) {
+        .section {
+            max-width: 375px;
+            max-height: 667px;  
+          }
+          .container {
+            max-width: 375px;
+            max-height: 667px;  
+          }
+          .row {
+            max-width: 375px;
+            max-height: 667px;   
+          }
+          .micro {
+            display: flex;
+            max-width: 562px;
+            max-height: 1000px; 
+            justify-content: center;
+          }
+          .micro_img {
+            display: inline-flex;
+            justify-content: center;
+            max-width: 93.75px;
+            max-height: 93.75px;  
+          }
+          .works { 
+            display: flex;
+            max-width: 375px;
+            max-height: 200px;  
+            justify-content: center;
+          }
+          .img_works {
+            max-width: 93.75px;
+            max-height: 93.75px;    
+          }
+        
+          .face {
+            display: none;
+            max-width: 100px;
+            max-height: 85px; 
+          }
+          .img {
+            display: none;
+        }
+          .skills {
+            max-width: 375px;
+            max-height: 150px;  
+          }
+         
+          .skill_line {
+            max-width: 375px; 
+            border-left: 292px solid #34547A;;
+          }
+          .write_me {
+              text-align: right
+          }
+         .section_eleven {
+            margin-top: 250px;
+        }
+       
+        }
